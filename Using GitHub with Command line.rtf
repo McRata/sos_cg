@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17940\viewh12200\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Commands for GitHub\
+\
+Usage of GitHub from mac Terminal is explained in: \
+https://github.com/codepath/ios_guides/wiki/Using-Git-with-Terminal\
+\
+and:\
+https://rogerdudler.github.io/git-guide/index.es.html\
+\
+The following are the main functions to use GitHub from mac Terminal\
+\
+1.-
+\f1\b  git init 
+\f0\b0 to create a local Git repository from existing Xcode project\
+\
+2.- 
+\f1\b ls -a 
+\f0\b0 to list all files including hidden files\
+\
+3.- 
+\f1\b touch 
+\f0\b0 to create files \'97 
+\f1\b touch \'93
+\f0\b0 filename.extension\'94\
+\
+4.- 
+\f1\b .gitignore
+\f0\b0  
+\f1\b (file) 
+\f0\b0 Specifies intentionally untracked files to ignore. \
+\
+The latest and greatest list of files and folders you want to ignore are listed here: https://raw.githubusercontent.com/github/gitignore/master/Swift.gitignore\
+\
+See .gitignore documentation in https://git-scm.com/docs/gitignore\
+\
+5.- 
+\f1\b gitattributes (file) 
+\f0\b0 This file allows us to tell Git how we want certain files to be treated\
+\
+6.- 
+\f1\b cat .gitattributes 
+\f0\b0 to print what files are in the file .gitattributes\
+\
+7.- 
+\f1\b git status 
+\f0\b0 to check for any changes that have been made to files since your last commit\
+\
+8.- 
+\f1\b git add <filename>
+\f0\b0  to stage a file or 
+\f1\b git add . 
+\f0\b0 to stage all the files. Once you run it in the Terminal, files will appear in green, which means that they are ready to go, but that they haven\'92t been added yet.\
+\
+9.- 
+\f1\b git commit 
+\f0\b0 to commit files that are ready to the repository. It\'92s a good practice to add a message to explain you and your collaborators what had happened in the current commit. This will be done with the next syntax: 
+\f1\b git commit
+\f0\b0  
+\f1\b -m \'93commit message\'94\
+\
+
+\f0\b0 10.- 
+\f1\b git push origin <branch> 
+\f0\b0 to send your changes to the online repository. Default 
+\f1\b <branch>
+\f0\b0  is 
+\f1\b master
+\f0\b0 , but you can create new branches to work other features separately with the next command.\
+\
+11.- 
+\f1\b git checkout -b <feature_x> 
+\f0\b0 creates a new branch called 
+\f1\b <feature_x>\
+\
+
+\f0\b0 11.1.- 
+\f1\b git checkout master 
+\f0\b0 returns to the main branch\
+\
+11.2.- 
+\f1\b git branch -d <feature_x> 
+\f0\b0 deletes the branch called 
+\f1\b <feature_x>
+\f0\b0 \
+\
+11.3.- 
+\f1\b git push origin <branch> 
+\f0\b0 to make the new branch	visible to your collaborators\
+\
+}
