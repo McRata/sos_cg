@@ -1,0 +1,1 @@
+Documento donde deberemos explicar el contenido del git.
