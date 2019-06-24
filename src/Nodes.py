@@ -5,6 +5,7 @@ import networkx as nx #Libreria de las redes
 import matplotlib.pyplot as plt #Libreria para la representacion de redes
 import pandas as pd
 import json
+import os
 
 orig_user = pd.read_csv("userdata/PDVR.csv")
 orig_user.columns = ['PDVR']
@@ -41,8 +42,22 @@ for user in data.keys():
     for follower in data.values():
         G.add_edge(user, str(follower))
 
-#Se dibuja la gráfica    
-nx.draw(G, node_color='r', edge_color='y')
 
+#Se dibuja la gráfica    
+nx.draw(G,node_color='r', edge_color='y')
+plt.show()
+
+
+subgraph_list = []
+D = nx.Graph()
+
+for node in G.nodes:
+    if node  in followers_list:
+        D.add_edge(node,G.neighbors(node))
+        
+
+
+
+nx.draw(D,node_color='r', edge_color='y')
 #Se pinta la gráfica
 plt.show()
