@@ -1,3 +1,9 @@
 #No se cargar en el git
 env/
 .vscode/
+.DS_Store
+.Rhistory
+.ini
+.csv
+.txt
+.json
